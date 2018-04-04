@@ -1,0 +1,18 @@
+server:
+  port: 9001 #当前应用端口
+spring:
+  application:
+    name: eureka-registry #应用名称
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.112.101.98:9001/eureka/ #Eureka Server地址
+    register-with-eureka:
+      false #因为自己是注册中心，所以不注册自己
+    fetch-registry:
+      false
+#  instance:
+#    metadataMap:
+#      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  server:
+    enable-self-preservation: false
