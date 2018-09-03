@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.112.101.98:9001/eureka/ #Eureka Server地址
+      defaultZone: http://192.168.101.98:9001/eureka/ #Eureka Server地址
     register-with-eureka:
       false #因为自己是注册中心，所以不注册自己
     fetch-registry:
